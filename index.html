@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/main.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body class="has-fixed-sidenav">
+    <nav>
+      <div class="nav-wrapper teal darken-2">
+        <a href="#" class="brand-logo" style="padding-left: 20px;">Customers</a>
+        <!-- <h5>Customers</h5> -->
+        <!-- Customers -->
+        <!-- <ul id="nav-mobile" class="right hide-on-med-and-down"> -->
+          <!-- <li><a href="sass.html">Sass</a></li> -->
+          <!-- <li><a href="badges.html">Components</a></li> -->
+          <!-- <li><a href="collapsible.html">JavaScript</a></li> -->
+        <!-- </ul> -->
+      </div>
+    </nav>
+    <ul id="slide-out" class="sidenav sidenav-fixed grey lighten-4">
+      <li>
+        <div class="user-view">
+          <h4>Royal Admin</h4>
+          <a href="#user"><img class="circle" src='https://avataaars.io/?avatarStyle=Circle&topType=LongHairStraight&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=BlazerShirt&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light'/></a>
+          <a href="#name"><span class="name">John Doe</span></a>
+          <a href="#email"><span class="email">jdandturk@gmail.com</span></a>
+        </div>
+      </li>
+      <li><a href="#"><i class="material-icons">group</i>Customers</a></li>
+      <li><a href="#"><i class="material-icons">description</i>Orders</a></li>
+      <li><a href="#"><i class="material-icons">date_range</i>Payments calendar</a></li>
+      <li><div class="divider"></div></li>
+      <li><a class="waves-effect waves-light btn"><i class="material-icons right">arrow_right_alt</i>GO TO CHECKOUT</a></li>
+    </ul>
+    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <!-- Teal page content  -->
+            <!-- <div class="divider"></div> -->
+            <div class="section">
+              <p>Que Manilium, ab iisque M. Summum ením bonum exposuit vacuitatem doloris; Nulla erit controversia. Quare ad ea primum, si videtur;</p>
+              <a class="waves-effect waves-light btn modal-trigger" href="#modal1"><i class="material-icons left">add</i>ADD CUSTOMER</a>
+            </div>
+
+            <!-- Modal Structure -->
+            <div id="modal1" class="modal">
+              <div class="modal-content">
+                <div class="row">
+                  <form class="col s12">
+                    <div class="row">
+                      <div class="input-field col s6">
+                        <input id="first_name" type="text" class="validate">
+                        <label for="first_name">First Name</label>
+                      </div>
+                      <div class="input-field col s6">
+                        <input id="last_name" type="text" class="validate">
+                        <label for="last_name">Last Name</label>
+                      </div>
+                    </div>
+                    <!-- <div class="row">
+                      <div class="input-field col s12">
+                        <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+                        <label for="disabled">Disabled</label>
+                      </div>
+                    </div> -->
+                    <!-- <div class="row">
+                      <div class="input-field col s12">
+                        <input id="password" type="password" class="validate">
+                        <label for="password">Password</label>
+                      </div>
+                    </div> -->
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                      </div>
+                    </div>
+                    <!-- <div class="row">
+                      <div class="col s12">
+                        This is an inline input field:
+                        <div class="input-field inline">
+                          <input id="email_inline" type="email" class="validate">
+                          <label for="email_inline">Email</label>
+                          <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+                        </div>
+                      </div>
+                    </div> -->
+                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">CREATE CUSTOMER</a>
+                  </form>
+                </div>
+              </div>
+              <!-- <div class="modal-footer"> -->
+                <!-- <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a> -->
+              <!-- </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.sidenav').sidenav();
+        $('.modal').modal();
+      });
+    </script>
+  </body>
+</html>
